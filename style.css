@@ -1,0 +1,21 @@
+img {
+height: 110%;
+width: 100%;
+padding-bottom: 10%;
+}
+
+.right-form{
+    background-color: rgb(240, 240, 233);
+}
+
+.save-button{
+    padding: 3px 55px;
+    border: none;
+    border-radius: 4px;
+}
+
+.calculate-button{
+    padding: 5px 55px;
+    border: none;
+    border-radius: 4px;
+}
