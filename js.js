@@ -17,6 +17,13 @@ function calculateBalance() {
     return balance;
 }
 
+function savingAmount() {
+    const saveinput = getInputs('save-input');
+    const income = getInputs('incomeId');
+    amount = (income * saveinput) / 100;
+    return amount;
+}
+
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
     document.getElementById('total-expense').innerHTML = calculateExpense();
@@ -24,21 +31,11 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
 })
 
-// document.getElementById('save-btn').addEventListener('click', function () {
+document.getElementById('save-btn').addEventListener('click', function () {
+    document.getElementById('saving-account').innerHTML = savingAmount();
 
+    const remainingBalance = document.getElementById('remaining-balance');
+    const remainingBalanceValue = parseFloat(remainingBalance.innerHTML);
+    remainingBalance.innerHTML = calculateBalance() - savingAmount();
 
-//     const savingAmount = (getInputs('save-input') * getInputs('incomeId')) / 100;
-//     // console.log(savingAmount);
-//     const saveAmountInput = document.getElementById('saving-account');
-//     saveAmountInput.innerHTML = savingAmount;
-
-//     //const remainingBalance = document.getElementById('remaining-balance');
-//     // let remainingBalanceValue = parseFloat(remainingBalance.innerHTML);
-//     // // console.log(remainingBalanceValue);
-
-//     //remainingBalance.innerHTML = balance - savingAmount;
-//     // console.log(balance);
-//     // console.log(savingAmount);
-//     let remainingBalance = balance - savingAmount;
-
-// })
+})
