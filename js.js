@@ -59,6 +59,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const remainingBalanceValue = parseFloat(remainingBalance.innerHTML);
     remainingBalance.innerHTML = calculateBalance() - savingAmount();
 
+    // --------- error message
     const savings = savingAmount();
     const balanceCheck = calculateBalance();
     if (savings > balanceCheck) {
