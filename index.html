@@ -35,24 +35,30 @@
                                     <label for="message">Income:</label>
                                     <input id="incomeId" type="text"><br>
                                     <h5 class="text-center mt-4 mb-4 fw-bold">Expense</h5>
-                                    <label id="foodId" for="message">Food:</label>
-                                    <input type="text"><br> <br>
-                                    <label id="rentId" for="message">Rent:</label>
-                                    <input type="text"><br> <br>
-                                    <label id="clothId" for="message">Cloth:</label>
-                                    <input type="text"><br> <br>
+                                    <label for="message">Food:</label>
+                                    <input id="foodId" type="text"><br> <br>
+                                    <label for="message">Rent:</label>
+                                    <input id="rentId" type="text"><br> <br>
+                                    <label for="message">Cloth:</label>
+                                    <input id="clothsId" type="text"><br> <br>
 
                                 </form>
                             </div>
                             <button id="calculate-btn">Calculate</button>
-                            <h5 class="text-center mt-4 mb-4 fw-bold">Total Expenses:</h5>
-                            <h5 class="text-center mt-3 mb-4 fw-bold">Balance: </h5>
+                            <h5 class="text-center mt-4 mb-4 fw-bold">Total Expenses: $
+                                <span id="total-expense">00</span>
+                            </h5>
+                            <h5 class="text-center mt-3 mb-4 fw-bold">Balance: $ <span id="balance">00</span> </h5>
 
                             <label for="message">Save:</label>
-                            <input type="text" name="" id=""> <i class="icon fas fa-percentage mx-2"></i>
+                            <input id="save-input" type="text"> <i class="icon fas fa-percentage mx-2"></i>
                             <button id="save-btn">Save</button>
-                            <h5 class="text-center mt-4 mb-4 fw-bold">Saving Amount:</h5>
-                            <h5 class="text-center mt-3 mb-4 fw-bold">Remaining Balance: </h5>
+                            <h5 class="text-center mt-4 mb-4 fw-bold">Saving Amount: $
+                                <span id="saving-account">00</span>
+                            </h5>
+                            <h5 class="text-center mt-3 mb-4 fw-bold">Remaining Balance: $
+                                <span id="remaining-balance">00</span>
+                            </h5>
                         </div>
                     </div>
 
